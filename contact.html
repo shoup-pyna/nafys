@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafy's | Services de Restauration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+           <a class="navbar-brand fw-bold " href="index.html">
+    <img src="img/logo_nafyz.png" alt="Logo Nafy's" width="40" height="40" class="d-inline-block align-text-top me-2">
+    NAFY'S
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu Interactif</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="bi bi-moon-fill" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">Contact</span>
+            <h1 class="page-title">Parlons de votre projet</h1>
+        </div>
+    </section>
+
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-wrapper reveal">
+                <div class="contact-info">
+                    <h3>Restons en contact</h3>
+                    <p>Vous avez un projet ? Contactez-nous.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                            <div><h6>Adresse</h6><p>33, Tabarre 29</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="bi bi-envelope-fill"></i></div>
+                            <div><h6>E-mail</h6><p>contact@nafys.ht</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="bi bi-telephone-fill"></i></div>
+                            <div><h6>Téléphone</h6><p>+509 31 00 XX XX</p></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Prénom</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn-submit" id="submitBtn">
+                                    <span id="btnText">Envoyer</span>
+                                    <span id="btnSpinner" class="d-none">Envoi...</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="success-message" id="successMessage">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <h5>Message envoyé !</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-12">
+                     <img src="img/logo_nafyz.png" alt="Logo Nafy's" width="60" class="footer-logo">
+                    <span class="navbar-brand fw-bold" style="color: var(--accent);">NAFY'S</span>
+                     <p class="small opacity-75">
+                       Expert en gestion de cafétérias institutionnelles et restauration collective en Haïti.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-title fw-bold mb-4">Navigation</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-title fw-bold mb-4">Services</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html">Cantine scolaire</a></li>
+                        <li><a href="services.html">Cafétéria Uni</a></li>
+                        <li><a href="services.html">Resto Entreprise</a></li>
+                        <li><a href="services.html">Événementiel</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-title fw-bold mb-4">Ressources</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: var(--border-color);">
+            <div class="text-center">
+                <p class="small mb-0 opacity-50">&copy; 2026 Nafy's Services. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

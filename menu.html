@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafy's | Menu Interactif</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+           <a class="navbar-brand fw-bold " href="index.html">
+    <img src="img/logo_nafyz.png" alt="Logo Nafy's" width="40" height="40" class="d-inline-block align-text-top me-2">
+    NAFY'S
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu Interactif</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="bi bi-moon-fill" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header py-5 bg-card mb-5">
+    <div class="container text-center">
+        <span class="section-tag">Menu Interactif</span>
+        <h1 class="page-title display-4 fw-bold">Menu Interactif — Nafy's</h1>
+        <p class="lead opacity-75">Parcourez notre offre culinaire et ajoutez vos favoris à votre sélection. Idéal pour événements, cafétérias et commandes de groupe.</p>
+    </div>
+</section>
+
+    <main class="pb-5">
+        <div class="container" id="menu-section">
+            <div class="layout-container">
+        
+        <div class="menu-column">
+            
+            <div class="categories">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="patisserie">Pâtisseries</button>
+                <button class="filter-btn" data-filter="sucree">Douceurs Sucrées</button>
+                <button class="filter-btn" data-filter="salee">Pièces Salées</button>
+                <button class="filter-btn" data-filter="jus">Jus Frais</button>
+                <button class="filter-btn" data-filter="plat">Plats de Résistance</button>
+            </div>
+
+            <div class="products-grid">
+                
+                <div class="product-card" data-cat="patisserie">
+
+                    <img src="img/u.png" alt="Royal Chocolat" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Le Royal Chocolat</h3>
+                        <p>Entremets croustillant au praliné et mousse fine au chocolat noir.</p>
+                        <div class="product-footer">
+                            <span class="price">1500 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="patisserie">
+                    <img src="img/hugue.png" alt="Tartelette Passion" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Tartelette Passion</h3>
+                        <p>Crème onctueuse au fruit de la passion et mangue fraîche.</p>
+                        <div class="product-footer">
+                            <span class="price">1200 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="patisserie">
+                    <img src="img/a.png" alt="Mille-Feuille Vanille" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Mille-Feuille Vanille</h3>
+                        <p>Feuilletage inversé croustillant et crème diplomate légère.</p>
+                        <div class="product-footer">
+                            <span class="price">1350 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="patisserie">
+                    <img src="img/b.png" alt="Éclair d'Or au Café" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Éclair d'Or au Café</h3>
+                        <p>Choux craquelin garni d'une crème intense infusée au café.</p>
+                        <div class="product-footer">
+                            <span class="price">1100 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="patisserie">
+                    <img src="img/z.png" alt="Le Paris-Nafy's" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Le Paris-Nafy's</h3>
+                        <p>Couronne de pâte à choux, crème mousseline généreuse au praliné.</p>
+                        <div class="product-footer">
+                            <span class="price">1600 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-cat="sucree">
+                    <img src="img/c.png" alt="Assortiment Macarons" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Assortiment Macarons</h3>
+                        <p>Mignardises fines aux parfums variés (pistache, caramel, vanille).</p>
+                        <div class="product-footer">
+                            <span class="price">950 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="sucree">
+                    <img src="img/d.png" alt="Mini Verrine Panna Cotta" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Mini Verrine Panna Cotta</h3>
+                        <p>Crème vanille et son miroir acidulé de coulis de fraises.</p>
+                        <div class="product-footer">
+                            <span class="price">750 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="sucree">
+                    <img src="img/e.png" alt="Truffes Noires Fondantes" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Truffes Noires Fondantes</h3>
+                        <p>Chocolat de couverture grand cru enrobé de cacao amer.</p>
+                        <div class="product-footer">
+                            <span class="price">800 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="sucree">
+                    <img src="img/f.png" alt="Madeleines Citron" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Madeleines Citron</h3>
+                        <p>Cœur ultra-moelleux parfumé aux zestes de citron vert bio.</p>
+                        <div class="product-footer">
+                            <span class="price">600 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="sucree">
+                    <img src="img/g.png" alt="Chouquettes Caramel" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Chouquettes Caramel</h3>
+                        <p>Petites bouchées soufflées garnies de caramel coulant.</p>
+                        <div class="product-footer">
+                            <span class="price">700 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-cat="salee">
+                    <img src="img/f.png" alt="Pâtés Feuilletés Tradition" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Pâtés Feuilletés Tradition</h3>
+                        <p>Feuilleté doré fourré à la viande de volaille bien assaisonnée.</p>
+                        <div class="product-footer">
+                            <span class="price">850 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="salee">
+                    <img src="img/h.png" alt="Brochettes de Volaille" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Brochettes de Volaille</h3>
+                        <p>Morceaux tendres marinés aux herbes locales et grillés.</p>
+                        <div class="product-footer">
+                            <span class="price">1100 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="salee">
+                    <img src="img/i.png" alt="Croquettes de Poisson" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Croquettes de Poisson</h3>
+                        <p>Chair de poisson relevée dans une panure croustillante.</p>
+                        <div class="product-footer">
+                            <span class="price">950 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="salee">
+                    <img src="img/k.png" alt="Verrines Avocat & Crevette" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Verrines Avocat & Crevette</h3>
+                        <p>Mousse d'avocat onctueuse et crevette rose marinée.</p>
+                        <div class="product-footer">
+                            <span class="price">1300 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="salee">
+                    <img src="img/l.png" alt="Rissoles au Fromage" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Rissoles au Fromage</h3>
+                        <p>Chaussons frits avec un mélange fondant de trois fromages.</p>
+                        <div class="product-footer">
+                            <span class="price">800 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-cat="jus">
+                    <img src="img/m.png" alt="Jus de Fruit de la Passion" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Jus de Fruit de la Passion</h3>
+                        <p>Pur jus pressé de fruits frais, légèrement sucré.</p>
+                        <div class="product-footer">
+                            <span class="price">500 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="jus">
+                    <img src="img/n.png" alt="Le Cocktail Tropical" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Le Cocktail Tropical</h3>
+                        <p>Mélange harmonieux de mangue, ananas et gingembre.</p>
+                        <div class="product-footer">
+                            <span class="price">600 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="jus">
+                    <img src="img/o.png" alt="Citronnade à la Menthe" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Citronnade à la Menthe</h3>
+                        <p>Citrons verts pressés minute infusés à la menthe fraîche.</p>
+                        <div class="product-footer">
+                            <span class="price">500 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-cat="plat">
+                    <img src="img/p.png" alt="Griot de Porc Prestige" class="product-image">
+
+                    <div class="product-info">
+                        <h3 class="item-title">Griot de Porc Prestige</h3>
+                        <p>Porc mariné et frit, servi avec riz collé et bananes pesées.</p>
+                        <div class="product-footer">
+                            <span class="price">3500 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="plat">
+                    <img src="img/q.png" alt="Poulet aux Noix de Cajou" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Poulet aux Noix de Cajou</h3>
+                        <p>Poulet mijoté dans une sauce onctueuse aux noix locales.</p>
+                        <div class="product-footer">
+                            <span class="price">3200 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="plat">
+                    <img src="img/r.png" alt="Poisson Gros Sel" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Poisson Gros Sel</h3>
+                        <p>Poisson poché, bouillon épicé, piment doux et oignons confits.</p>
+                        <div class="product-footer">
+                            <span class="price">4200 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="plat">
+                    <img src="img/s.png" alt="Lalo aux Crabes" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Lalo aux Crabes</h3>
+                        <p>Feuilles de lalo mijotées au crabe, servi avec du riz blanc.</p>
+                        <div class="product-footer">
+                            <span class="price">3800 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-cat="plat">
+                    <img src="img/t.png" alt="Tassot de Dinde Croustillant" class="product-image">
+                    <div class="product-info">
+                        <h3 class="item-title">Tassot de Dinde Croustillant</h3>
+                        <p>Dinde découpée en dés, marinée aux agrumes puis frite.</p>
+                        <div class="product-footer">
+                            <span class="price">3400 HTG</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="cart-column">
+            <div class="sticky-cart" id="cart-main-layout">
+                <h2>🛒 Sélection</h2>
+                <hr>
+                
+                <div id="cart-content">
+                    <p class="empty-msg">Votre sélection est vide</p>
+                </div>
+
+                <div class="total-box">
+                    <span>Total :</span>
+                    <span id="cart-total">0 HTG</span>
+                </div>
+                <button id="send-order-btn" class="send-btn" disabled>Envoyer ma liste</button>
+            </div>
+
+            <div id="success-message" class="success-box" style="display: none;">
+                <div class="success-icon">✓</div>
+                <h3>C'est fait !</h3>
+                <p>Votre liste de sélection a bien été envoyée à l'équipe de Nafy's.</p>
+                <button id="reset-cart-btn" class="reset-btn">Créer une nouvelle liste</button>
+            </div>
+            </div>
+        </div>
+
+    </div>
+        </div>
+    </main>
+
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-12">
+                     <img src="img/logo_nafyz.png" alt="Logo Nafy's" width="60" class="footer-logo">
+                    <span class="navbar-brand fw-bold" style="color: var(--accent);">NAFY'S</span>
+                     <p class="small opacity-75">
+                       Expert en gestion de cafétérias institutionnelles et restauration collective en Haïti.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-title fw-bold mb-4">Navigation</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">A propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-title fw-bold mb-4">Services</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html">Cantine Scolaire</a></li>
+                        <li><a href="services.html">Cafétéria Uni</a></li>
+                        <li><a href="services.html">Resto Entreprise</a></li>
+                        <li><a href="services.html">Événementiel</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-title fw-bold mb-4">Ressources</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: var(--border-color);">
+            <div class="text-center">
+                <p class="small mb-0 opacity-50">&copy; 2026 Nafy's Services. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

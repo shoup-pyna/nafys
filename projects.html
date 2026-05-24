@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafy's | Services de Restauration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+           <a class="navbar-brand fw-bold " href="index.html">
+    <img src="img/logo_nafyz.png" alt="Logo Nafy's" width="40" height="40" class="d-inline-block align-text-top me-2">
+    NAFY'S
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu Interactif</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="bi bi-moon-fill" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header py-5 bg-card mb-5">
+    <div class="container text-center">
+        <span class="section-tag">Portfolio Culinaire</span>
+        <h1 class="page-title display-4 fw-bold">Notre Catalogue de Réalisations</h1>
+        <p class="lead opacity-75">Explorez nos interventions majeures dans les secteurs éducatif, corporatif et événementiel.</p>
+    </div>
+</section>
+
+<div class="container mb-5">
+    <div class="d-flex justify-content-center flex-wrap gap-2">
+        <button class="btn btn-outline-accent active px-4 rounded-pill" onclick="filterSelection('all')">Tout voir</button>
+        <button class="btn btn-outline-accent px-4 rounded-pill" onclick="filterSelection('scolaire')">Scolaire</button>
+        <button class="btn btn-outline-accent px-4 rounded-pill" onclick="filterSelection('entreprise')">Entreprise</button>
+        <button class="btn btn-outline-accent px-4 rounded-pill" onclick="filterSelection('event')">Événements</button>
+    </div>
+</div>
+
+<section class="pb-5">
+    <div class="container">
+        <div class="row g-4" id="projectGrid">
+            
+            <div class="col-lg-4 col-md-6 filter-item scolaire">
+                <div class="project-card shadow-sm h-100 bg-card rounded-4 overflow-hidden border border-secondary border-opacity-25">
+                    <img src="img/11.png" class="img-fluid" alt="Lycée National">
+                    <div class="p-4">
+                        <span class="badge bg-secondary mb-2">Scolaire</span>
+                        <h5 class="fw-bold">Lycée National de Pétion-Ville</h5>
+                        <p class="small opacity-75">Gestion complète de la cafétéria servant plus de 800 repas par jour.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 filter-item entreprise">
+                <div class="project-card shadow-sm h-100 bg-card rounded-4 overflow-hidden border border-secondary border-opacity-25">
+                    <img src="img/7.png" class="img-fluid" alt="Digicel">
+                    <div class="p-4">
+                        <span class="badge bg-secondary mb-2">Entreprise</span>
+                        <h5 class="fw-bold">Siège Social Digicel</h5>
+                        <p class="small opacity-75">Mise en place d'un bar à salades et menus diététiques pour le personnel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 filter-item event">
+                <div class="project-card shadow-sm h-100 bg-card rounded-4 overflow-hidden border border-secondary border-opacity-25">
+                    <img src="img/2.png" class="img-fluid" alt="Gala UniQ">
+                    <div class="p-4">
+                        <span class="badge bg-secondary mb-2">Événement</span>
+                        <h5 class="fw-bold">Gala Annuel Université Quisqueya</h5>
+                        <p class="small opacity-75">Service traiteur complet pour la remise des diplômes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 filter-item scolaire">
+                <div class="project-card shadow-sm h-100 bg-card rounded-4 overflow-hidden border border-secondary border-opacity-25">
+                    <img src="img/10.png" class="img-fluid" alt="Dondon">
+                    <div class="p-4">
+                        <span class="badge bg-secondary mb-2">Scolaire</span>
+                        <h5 class="fw-bold">École du Nord (Dondon)</h5>
+                        <p class="small opacity-75">Programme pilote de cantine scolaire utilisant des produits locaux.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 filter-item entreprise">
+                <div class="project-card shadow-sm h-100 bg-card rounded-4 overflow-hidden border border-secondary border-opacity-25">
+                    <img src="img/6.png" class="img-fluid" alt="BRH">
+                    <div class="p-4">
+                        <span class="badge bg-secondary mb-2">Entreprise</span>
+                        <h5 class="fw-bold">Banque de la République d'Haïti</h5>
+                        <p class="small opacity-75">Gestion déléguée du restaurant exécutif de la banque centrale.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 filter-item event">
+                <div class="project-card shadow-sm h-100 bg-card rounded-4 overflow-hidden border border-secondary border-opacity-25">
+                    <img src="img/1.png" class="img-fluid" alt="Tech Cocktail">
+                    <div class="p-4">
+                        <span class="badge bg-secondary mb-2">Événement</span>
+                        <h5 class="fw-bold">Sommet de la Technologie</h5>
+                        <p class="small opacity-75">Cocktail dînatoire et pauses-café pour 250 participants.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 filter-item scolaire">
+                <div class="project-card shadow-sm h-100 bg-card rounded-4 overflow-hidden border border-secondary border-opacity-25">
+                    <img src="img/9.png" class="img-fluid" alt="Sainte Rose">
+                    <div class="p-4">
+                        <span class="badge bg-secondary mb-2">Scolaire</span>
+                        <h5 class="fw-bold">Institution Sainte Rose de Lima</h5>
+                        <p class="small opacity-75">Accompagnement nutritionnel et fourniture de repas chauds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 filter-item entreprise">
+                <div class="project-card shadow-sm h-100 bg-card rounded-4 overflow-hidden border border-secondary border-opacity-25">
+                    <img src="img/8.png" class="img-fluid" alt="SONAPI">
+                    <div class="p-4">
+                        <span class="badge bg-secondary mb-2">Entreprise</span>
+                        <h5 class="fw-bold">Cafétéria Industrielle SONAPI</h5>
+                        <p class="small opacity-75">Service de restauration de masse optimisé en rapidité.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 filter-item event">
+                <div class="project-card shadow-sm h-100 bg-card rounded-4 overflow-hidden border border-secondary border-opacity-25">
+                    <img src="img/3.png" class="img-fluid" alt="Curve Power">
+                    <div class="p-4">
+                        <span class="badge bg-secondary mb-2">Événement</span>
+                        <h5 class="fw-bold">Lancement Curve Power</h5>
+                        <p class="small opacity-75">Traiteur exclusif pour le lancement de la plateforme marketplace.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 filter-item scolaire">
+                <div class="project-card shadow-sm h-100 bg-card rounded-4 overflow-hidden border border-secondary border-opacity-25">
+                    <img src="img/4.png" class="img-fluid" alt="Campus UNIFA">
+                    <div class="p-4">
+                        <span class="badge bg-secondary mb-2">Scolaire</span>
+                        <h5 class="fw-bold">Campus UNIFA</h5>
+                        <p class="small opacity-75">Réorganisation de l'espace de restauration des facultés.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 filter-item entreprise">
+                <div class="project-card shadow-sm h-100 bg-card rounded-4 overflow-hidden border border-secondary border-opacity-25">
+                    <img src="img/12.png" class="img-fluid" alt="Natcom">
+                    <div class="p-4">
+                        <span class="badge bg-secondary mb-2">Entreprise</span>
+                        <h5 class="fw-bold">Natcom - Cafétéria Staff</h5>
+                        <p class="small opacity-75">Planification de menus cycliques pour 200 employés quotidiens.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 filter-item event">
+                <div class="project-card shadow-sm h-100 bg-card rounded-4 overflow-hidden border border-secondary border-opacity-25">
+                    <img src="img/20.png" class="img-fluid" alt="Conférence">
+                    <div class="p-4">
+                        <span class="badge bg-secondary mb-2">Événement</span>
+                        <h5 class="fw-bold">Conférence Internationale de Santé</h5>
+                        <p class="small opacity-75">Logistique alimentaire et service de déjeuner VIP.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+     <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-12">
+                     <img src="img/logo_nafyz.png" alt="Logo Nafy's" width="60" class="footer-logo">
+                    <span class="navbar-brand fw-bold" style="color: var(--accent);">NAFY'S</span>
+                     <p class="small opacity-75">
+                       Expert en gestion de cafétérias institutionnelles et restauration collective en Haïti.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-title fw-bold mb-4">Navigation</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">A propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-title fw-bold mb-4">Services</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html">Cantine Scolaire</a></li>
+                        <li><a href="services.html">Cafétéria Uni</a></li>
+                        <li><a href="services.html">Resto Entreprise</a></li>
+                        <li><a href="services.html">Événementiel</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-title fw-bold mb-4">Ressources</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: var(--border-color);">
+            <div class="text-center">
+                <p class="small mb-0 opacity-50">&copy; 2026 Nafy's Services. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
